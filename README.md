@@ -124,7 +124,7 @@ NuStar version of <a href="https://github.com/kingyue737/vitify-admin/">Vitify A
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx degit kingyue737/vitify-admin my-vitify-app
+npx degit NuStar-Nuclear/vitify-nustar my-vitify-app
 cd my-vitify-app
 pnpm i
 ```
