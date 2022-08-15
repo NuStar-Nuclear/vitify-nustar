@@ -1,7 +1,7 @@
 <p align="center">
   <img alt="Vitify - Opinionated Vuetify Admin Starter Template" src="public/favicon.svg" width=200px/>
 </p>
-<h1 align="center">Vitify Admin</h1>
+<h1 align="center">Vitify NuStar</h1>
 
 <p align="center">
   <a href="https://github.com/vuejs/vue">
@@ -10,13 +10,11 @@
   <a href="https://github.com/vuetifyjs/vuetify">
     <img src="https://img.shields.io/badge/vuetify-2.6.9-blue.svg" alt="vuetify">
   </a>
-  <a href="https://github.com/kingyue737/vitify-admin/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license">
-  </a>
 </p>
 
 <p align='center'>
-<b>Vite</b> + <b>Vuetify</b>, Opinionated Admin Starter Template<br><br>
+<b>Vite</b> + <b>Vuetify</b>, Opinionated Admin Starter Template<br>
+NuStar version of <a href="https://github.com/kingyue737/vitify-admin/">Vitify Admin</a><br><br>
 </p>
 
 <p align='center'>
@@ -136,13 +134,11 @@ pnpm i
 
 When you use this template, try follow the checklist to update your info properly
 
-- [ ] Change the author name in `LICENSE`
+- [ ] Add suitable `LICENSE`
 - [ ] Change the title in `index.html`, navigation drawer and login page
 - [ ] Change the hostname in `vite.config.ts`
 - [ ] Change the favicon in `public`
-- [ ] Clean up the `README` and remove routes
-- [ ] Change the copyright in navigation drawer and login page
-- [ ] Change default locale of `vue-i18n`
+- [x] Change default locale of `vue-i18n`
 
 And, enjoy :)
 
@@ -187,11 +183,10 @@ pnpm test:e2e
 
 ### Acknowledgement
 
-Inspired by [vitesse](https://github.com/antfu/vitesse) and [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) 💖. Thanks for every developer for making frontend community better.
+Inspired by [vitesse](https://github.com/antfu/vitesse) and [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) 💖.
 
-I made this starter template for promptly scaffolding admin projects of my company, along with some good practices I've learned during making these apps.
+### Maintainers
 
-Currently, plenty of awesome Vue 2 librarys have not migrated to Vue 3 ecosystem, maybe never 😭. There is still a long way to go before the release of version Vuetify v3.1 which includes all components of Vuetify 2. So I struggle with bridging perfect DX of Vue 3 to my Vuetify 2 projects.
-It's strongly opinionated, but hope it can help you to avoid detours.
+[📧 Yue JIN](mailto:yjin@nustarnuclear.com)
 
-Don't hesitate to open an issue or a discussion, if you meet any problem. The documentations will be ready soon!
+Copyright © 2022-PRESENT Shanghai NuStar Nuclear Power Technology Co., Ltd.
