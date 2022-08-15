@@ -25,7 +25,7 @@ export const install: InstallPlugin = (vue) => {
   return new Vuetify({
     lang: {
       locales: { zh, en },
-      current: 'en',
+      current: 'zh',
     },
     theme: {
       dark: useDark().value,

@@ -6,13 +6,13 @@ describe('login page', () => {
   it('login correctly', async () => {
     const { getByText, getByLabelText } = renderWithVuetify(LoginPage)
     getByText('User Login')
-    const userInput = getByLabelText('Username')
+    const userInput = getByLabelText('用户名')
     await fireEvent.update(userInput, 'admin')
 
-    const passwordInput = getByLabelText('Password')
+    const passwordInput = getByLabelText('密码')
     await fireEvent.update(passwordInput, 'admin')
 
-    const button = getByText('Login')
+    const button = getByText('登录')
     await fireEvent.click(button)
 
     const store = useUserStore()
