@@ -87,6 +87,7 @@ export default defineComponent({
             <v-list-item-title>
               Vitify <span class="primary--text">Admin</span>
             </v-list-item-title>
+            <v-list-item-title> 核星前端解决方案 </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -118,18 +119,12 @@ export default defineComponent({
         <div class="text-body-2 font-weight-light pt-6 pt-md-0 text-center">
           &copy; Copyright 2022
           <a
-            href="https://github.com/kingyue737"
-            class="font-weight-regular"
-            target="_blank"
-            >Yue JIN</a
-          >
-          <span> & </span>
-          <a
             href="https://www.nustarnuclear.com/"
             class="font-weight-regular"
             target="_blank"
-            >NuStar</a
-          >
+            >NuStar Nuclear</a
+          ><br />
+          All Rights Reserved
         </div>
       </v-list-item>
     </template>
@@ -222,7 +217,7 @@ export default defineComponent({
     margin-left: -6px;
     .v-list-item__title {
       line-height: 1.3;
-      font-size: 24px;
+      font-size: 18px;
       font-weight: bold;
     }
   }
