@@ -5,7 +5,7 @@ import { renderWithVuetify } from '@/../test/helpers'
 describe('login page', () => {
   it('login correctly', async () => {
     const { getByText, getByLabelText } = renderWithVuetify(LoginPage)
-    getByText('User Login')
+    getByText('用户登录')
     const userInput = getByLabelText('用户名')
     await fireEvent.update(userInput, 'admin')
 
