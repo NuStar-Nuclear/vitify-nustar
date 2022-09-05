@@ -17,6 +17,7 @@
     "@mdi/js": "^7.0.96",
     "@vueuse/core": "^9.1.1",
     "axios": "^0.27.2",
+    "browserslist-to-esbuild": "^1.2.0",
     "echarts": "^5.3.3",
     "js-cookie": "^3.0.1",
     "lodash": "^4.17.21",
@@ -79,7 +80,8 @@
     "last 2 versions",
     "not dead",
     "not op_mini all",
-    "not ie>0"
+    "not ie>0",
+    "chrome>68"
   ],
   "pnpm": {
     "patchedDependencies": {
