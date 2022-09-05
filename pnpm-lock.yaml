@@ -7,9 +7,6 @@ patchedDependencies:
   strict-event-emitter@0.2.4:
     hash: x5jlk7tuhzo2bndbht7eprupya
     path: patches/strict-event-emitter@0.2.4.patch
-  vue-echarts@6.2.3:
-    hash: exlq2dgmvs35qxsiql52sjjo3a
-    path: patches/vue-echarts@6.2.3.patch
 
 specifiers:
   '@intlify/unplugin-vue-i18n': ^0.5.0
@@ -83,7 +80,7 @@ dependencies:
   portal-vue: 2.1.7_vue@2.7.10
   screenfull: 6.0.2
   vue: 2.7.10
-  vue-echarts: 6.2.3_exlq2dgmvs35qxsiql52sjjo3a_echarts@5.3.3+vue@2.7.10
+  vue-echarts: 6.2.3_echarts@5.3.3+vue@2.7.10
   vue-i18n: 8.27.2_vue@2.7.10
   vue-i18n-bridge: 9.2.2_vue@2.7.10
   vue-router: 3.6.4_vue@2.7.10
@@ -6027,7 +6024,7 @@ packages:
     dependencies:
       vue: 2.7.10
 
-  /vue-echarts/6.2.3_exlq2dgmvs35qxsiql52sjjo3a_echarts@5.3.3+vue@2.7.10:
+  /vue-echarts/6.2.3_echarts@5.3.3+vue@2.7.10:
     resolution: {integrity: sha512-xHzUvgsgk/asJTcNa8iVVwoovZU3iEUHvmBa3bzbiP3Y6OMxM1YXsoWOKVmVVaUusGs4ob4pSwjwNy2FemAz9w==}
     requiresBuild: true
     peerDependencies:
@@ -6043,7 +6040,6 @@ packages:
       vue: 2.7.10
       vue-demi: 0.13.11_vue@2.7.10
     dev: false
-    patched: true
 
   /vue-eslint-parser/9.0.3_eslint@8.23.0:
     resolution: {integrity: sha512-yL+ZDb+9T0ELG4VIFo/2anAOz8SvBdlqEnQnvJ3M7Scq56DvtjY0VY88bByRZB0D4J0u8olBcfrXTVONXsh4og==}
