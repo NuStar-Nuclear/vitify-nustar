@@ -1,12 +1,14 @@
 export {}
 
 import 'vue-router'
+import type { RouteConfig } from 'vue-router'
 import type { Role } from '@/api/users'
 
 declare module 'vue-router' {
   interface RouteMeta {
     icon?: string // drawer item icon
     drawerGroup?: 'admin' | 'PUC' // groups will be separated by divider line in drawer
+    drawerIndex?: number // determine the order of item in drawer
     title?: string // drawer item and breadcrumb text
     subtitle?: string
     roles?: Role[] // authorized user groups
@@ -14,4 +16,5 @@ declare module 'vue-router' {
     hidden?: boolean // hide this route in drawer if True
     breadcrumb?: 'hidden' | 'disabled' // default is enabled
   }
+  type RouteRecordRaw = RouteConfig // shim plugins for vue-router v4
 }
