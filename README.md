@@ -10,6 +10,9 @@
   <a href="https://github.com/vuetifyjs/vuetify">
     <img src="https://img.shields.io/badge/vuetify-2.6.9-blue.svg" alt="vuetify">
   </a>
+  <a href="https://github.com/NuStar-Nuclear/vitify-nustar/actions">
+    <img src="https://github.com/NuStar-Nuclear/vitify-nustar/actions/workflows/ci.yml/badge.svg" alt="CI badge">
+  </a>
 </p>
 
 <p align='center'>
