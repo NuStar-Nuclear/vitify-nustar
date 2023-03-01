@@ -5,7 +5,6 @@ import {
   getGroup,
   type Role,
 } from '@/api/users'
-import { setToken, removeToken } from '@/utils/cookies'
 
 export const useUserStore = defineStore('user', {
   state: () => {
@@ -34,7 +33,6 @@ export const useUserStore = defineStore('user', {
       useMessageStore().$reset()
     },
     resetToken() {
-      removeToken()
       this.token = ''
       this.roles = []
     },

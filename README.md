@@ -5,10 +5,10 @@
 
 <p align="center">
   <a href="https://github.com/vuejs/vue">
-    <img src="https://img.shields.io/badge/vue-2.7.10-brightgreen.svg" alt="vue">
+    <img src="https://img.shields.io/badge/vue-2.7.14-brightgreen.svg" alt="vue">
   </a>
   <a href="https://github.com/vuetifyjs/vuetify">
-    <img src="https://img.shields.io/badge/vuetify-2.6.9-blue.svg" alt="vuetify">
+    <img src="https://img.shields.io/badge/vuetify-2.6.14-blue.svg" alt="vuetify">
   </a>
   <a href="https://github.com/NuStar-Nuclear/vitify-nustar/actions">
     <img src="https://github.com/NuStar-Nuclear/vitify-nustar/actions/workflows/ci.yml/badge.svg" alt="CI badge">
@@ -25,8 +25,8 @@ NuStar version of <a href="https://github.com/kingyue737/vitify-admin/">Vitify A
 <a href="https://kingyue737.github.io/vitify-docs/">Documentation<br><br></a>
 </p>
 
-
 ## Features
+
 - 🦾 Full [TypeScript Support and intellisense](https://github.com/vuetifyjs/vuetify/issues/14798#issuecomment-1139788615) for [Vuetify 2](https://vuetifyjs.com/) components, powered by [Volar](https://github.com/johnsoncodehk/volar/tree/master/extensions/vscode-vue-language-features)
 
 - 🖖 [Vue 2.7](https://github.com/vuejs/vue) - Composition API and `<script setup>`
@@ -88,7 +88,6 @@ NuStar version of <a href="https://github.com/kingyue737/vitify-admin/">Vitify A
 - [VueUse](https://github.com/antfu/vueuse) - Collection of useful composition APIs
 - [Mock Service Worker](https://github.com/mswjs/msw) - Seamless REST/GraphQL API mocking library for browser and Node.js
 - [`vite-plugin-vue2-svg`](https://github.com/pakholeung37/vite-plugin-vue2-svg) - Load SVG files as Vue components, and auto register as Vuetify `v-icon`s
-- [`vite-plugin-browserslist-useragent`](https://github.com/kingyue737/vite-plugin-browserslist-useragent) - Compile browserslist query to a RegExp to test browser useragent
 
 ### Compatibility
 
@@ -113,7 +112,6 @@ NuStar version of <a href="https://github.com/kingyue737/vitify-admin/">Vitify A
   - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) - Code formatter
   - [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
-
 ## Try it now!
 
 > Vitify Admin requires Node >=16.6.0
@@ -131,6 +129,7 @@ npx degit NuStar-Nuclear/vitify-nustar my-vitify-app
 cd my-vitify-app
 pnpm i
 ```
+
 > Vitify Admin requires [`pnpm patch`](https://pnpm.io/cli/patch) for bug fixing in dependencies before maintainers release them. If you are using `yarn`, you can use [`yarn patch`](https://yarnpkg.com/cli/patch). For `npm` users, [`patch-package`](https://github.com/ds300/patch-package) is required as `npm` has no built-in patching functionality.
 
 ## Checklist

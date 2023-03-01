@@ -4,14 +4,13 @@ import vue2 from '@vitejs/plugin-vue2'
 import legacy from '@vitejs/plugin-legacy'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import { createSvgPlugin } from 'vite-plugin-vue2-svg'
+import { createSvgPlugin } from '@kingyue/vite-plugin-vue2-svg'
 import { splitVendorChunkPlugin } from 'vite'
 import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import Inspect from 'vite-plugin-inspect'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import browserslistToEsbuild from 'browserslist-to-esbuild'
-import SupportedBrowsers from 'vite-plugin-browserslist-useragent'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -24,7 +23,6 @@ export default defineConfig({
     Pages(),
     Layouts(),
     legacy({
-      // Plugin does not use browserslistrc https://github.com/vitejs/vite/issues/2476
       modernPolyfills: true,
       renderLegacyChunks: false,
     }),
@@ -32,13 +30,14 @@ export default defineConfig({
       resolvers: [
         {
           type: 'component',
-          resolve: (name: string) => {
+          resolve: (name) => {
             const blackList = ['VChart', 'VHeadCard']
             if (name.match(/^V[A-Z]/) && !blackList.includes(name))
               return { name, from: 'vuetify/lib' }
           },
         },
       ],
+      dirs: [],
       dts: false,
       types: [],
     }),
@@ -46,16 +45,8 @@ export default defineConfig({
       imports: [
         'vue',
         'pinia',
-        {
-          'vue-i18n-bridge': ['useI18n', 'createI18n'],
-          'vue-router/composables': [
-            'useRoute',
-            'useRouter',
-            'useLink',
-            'onBeforeRouteUpdate',
-            'onBeforeRouteLeave',
-          ],
-        },
+        'vue-router/composables',
+        { 'vue-i18n-bridge': ['useI18n'] },
       ],
       dts: 'src/auto-imports.d.ts',
       dirs: ['src/stores'],
@@ -69,7 +60,6 @@ export default defineConfig({
       fullInstall: false,
       include: [path.resolve(__dirname, 'src/locales/**')],
     }),
-    SupportedBrowsers(),
     Inspect(),
   ],
   css: {
