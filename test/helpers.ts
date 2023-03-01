@@ -6,6 +6,7 @@ import { render } from '@testing-library/vue'
 import Router from 'vue-router'
 import Vue from 'vue'
 import { install as installI18n } from '@/plugins/i18n'
+import { install as installComponents } from '@/plugins/components'
 
 export function mountComposable<T>(composable: () => T) {
   let result: T | undefined
@@ -58,7 +59,9 @@ export function renderWithVuetify(
       ...options,
     },
     (vue) => {
+      installComponents(vue)
       const i18n = installI18n(vue)
+      vue.use(PiniaVuePlugin)
       return { i18n }
     }
   )
